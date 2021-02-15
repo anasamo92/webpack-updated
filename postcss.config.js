@@ -1,33 +1,41 @@
-import path from "path";
+'use strict';
 
-export default ({ file, _options, env }) => {
-    let browsers = process.env.BROWSERS || ">1%|last 4 versions|Firefox ESR|not ie < 9";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 
-    let variables = {};
+var _path = require('path');
+
+var _path2 = _interopRequireDefault(_path);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = function (_ref) {
+    var file = _ref.file,
+        options = _ref.options,
+        env = _ref.env;
+
+    var browsers = process.env.BROWSERS || '>1%|last 4 versions|Firefox ESR|not ie < 9';
+
+    var variables = {};
     if (process.env.CSS_VARIABLE_FILE) {
-        variables = require(path.resolve("./" + process.env.CSS_VARIABLE_FILE));
+        variables = require(_path2.default.resolve('./' + process.env.CSS_VARIABLE_FILE));
     }
     return {
         plugins: {
-            "postcss-import": {
-                root: file.dirname
-            },
-            "postcss-mixins": true,
-            "postcss-flexbugs-fixes": true,
-            "postcss-normalize": true,
-            "postcss-custom-properties": {
-                preserve: false,
-                variables
-            },
-            "postcss-color-function": true,
-            "postcss-preset-env": {
-                stage: 3,
-                overrideBrowserslist: browsers.split("|"),
+            'postcss-flexbugs-fixes': true,
+            'postcss-import': { root: file.dirname },
+            'postcss-cssnext': {
+                browsers: browsers.split('|'),
                 features: {
-                    "nesting-rules": true
+                    customProperties: {
+                        variables: variables
+                    }
                 }
             },
-            cssnano: env === "production" ? { preset: "default" } : false
+            cssnano: env === 'production' ? { preset: 'default' } : false
         }
     };
 };
+
+module.exports = exports['default'];

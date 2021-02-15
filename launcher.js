@@ -1,8 +1,8 @@
 #!/usr/bin/env node
+'use strict';
 
-import { serverLauncher } from "./index";
+var _index = require('./index');
+
 // We take the config relative to the process folder, assuming user launch command from project folder
-
-const webpackConfig = require(process.cwd() + "/webpack.config");
-
-serverLauncher(webpackConfig, {});
+var webpackConfig = require(process.cwd() + '/webpack.config');
+(0, _index.serverLauncher)(webpackConfig, {});
