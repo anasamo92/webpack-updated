@@ -13,7 +13,7 @@ var _glob = require('glob');
 
 var _glob2 = _interopRequireDefault(_glob);
 
-var _extractTextWebpackPlugin = require('extract-text-webpack-plugin');
+var _extractTextWebpackPlugin = require('extract-text-webpack-plugin-updated');
 
 var _extractTextWebpackPlugin2 = _interopRequireDefault(_extractTextWebpackPlugin);
 

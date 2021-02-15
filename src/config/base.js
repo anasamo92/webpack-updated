@@ -3,7 +3,7 @@ import path from 'path';
 import { cpus } from 'os';
 
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import ExtractTextPlugin from 'extract-text-webpack-plugin';
+import ExtractTextPlugin from 'extract-text-webpack-plugin-updated';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import WatchMissingNodeModulesPlugin from 'react-dev-utils/WatchMissingNodeModulesPlugin';
 import CaseSensitivePathsPlugin from 'case-sensitive-paths-webpack-plugin';

@@ -1,6 +1,6 @@
 import path from 'path';
 import glob from 'glob';
-import ExtractTextPlugin from 'extract-text-webpack-plugin';
+import ExtractTextPlugin from 'extract-text-webpack-plugin-updated';
 
 export default function cssLoaderBuilder(parsedEnv, cssOptions = {}, handleScss = true, handleCss = true) {
 
