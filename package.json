@@ -8,7 +8,6 @@
     },
     "scripts": {
         "build": "better-npm-run build",
-        "prepack": "npm install",
         "release": "npm publish --registry https://registry.npmjs.org/ --access public",
         "release-beta": "npm publish --registry https://registry.npmjs.org/ --tag beta --access public",
         "release-alpha": "npm publish --registry http://localhost:4873 --tag alpha --access public"
