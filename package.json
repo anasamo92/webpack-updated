@@ -1,6 +1,6 @@
 {
     "name": "webpack-updated",
-    "version": "1.0.12",
+    "version": "1.0.13",
     "description": "Focus webpack config",
     "main": "./index.js",
     "bin": {
