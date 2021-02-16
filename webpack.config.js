@@ -1,5 +1,9 @@
 'use strict';
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
 var _default = require('./config/default');
 
 var _default2 = _interopRequireDefault(_default);

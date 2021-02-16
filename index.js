@@ -1,5 +1,8 @@
 'use strict';
 
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 exports.configBuilder = exports.serverLauncher = undefined;
 
 var _devServer = require('./dev-server');
