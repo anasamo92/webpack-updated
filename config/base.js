@@ -288,4 +288,4 @@ var baseConfig = function baseConfig(environnement, definedVariables) {
 };
 
 exports.default = baseConfig;
-module.exports = exports['default'];
+module.exports = exports.default;

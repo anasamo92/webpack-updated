@@ -68,4 +68,4 @@ function cssLoaderBuilder(parsedEnv) {
         use: cssLoaders
     };
 }
-module.exports = exports['default'];
+module.exports = exports.default;
