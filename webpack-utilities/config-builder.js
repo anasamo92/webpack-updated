@@ -523,4 +523,4 @@ var ConfigBuilder = function () {
 }();
 
 exports.default = ConfigBuilder;
-module.exports = exports['default'];
+module.exports = exports.default;

@@ -13,9 +13,9 @@ var _glob = require('glob');
 
 var _glob2 = _interopRequireDefault(_glob);
 
-var _extractTextWebpackPlugin = require('extract-text-webpack-plugin-updated');
+var _extractTextWebpackPluginUpdated = require('extract-text-webpack-plugin-updated');
 
-var _extractTextWebpackPlugin2 = _interopRequireDefault(_extractTextWebpackPlugin);
+var _extractTextWebpackPluginUpdated2 = _interopRequireDefault(_extractTextWebpackPluginUpdated);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,7 +55,7 @@ function cssLoaderBuilder(parsedEnv) {
     }
 
     if (!parsedEnv.HOT_RELOAD) {
-        cssLoaders = _extractTextWebpackPlugin2.default.extract({
+        cssLoaders = _extractTextWebpackPluginUpdated2.default.extract({
             fallback: 'style-loader',
             use: cssLoaders
         });
@@ -68,4 +68,4 @@ function cssLoaderBuilder(parsedEnv) {
         use: cssLoaders
     };
 }
-module.exports = exports['default'];
+module.exports = exports.default;
