@@ -37,10 +37,12 @@ export default function cssLoaderBuilder(parsedEnv, cssOptions = {}, handleScss 
     }
 
     if (!parsedEnv.HOT_RELOAD) {
-        cssLoaders = MiniCssExtractPlugin.extract({
-            fallback: 'style-loader',
-            use: cssLoaders
-        });
+        cssLoaders = [
+            {
+                loader: MiniCssExtractPlugin.loader
+            },
+            'css-loader'
+        ];
     } else {
         cssLoaders.unshift('style-loader');
     }

@@ -55,10 +55,12 @@ function cssLoaderBuilder(parsedEnv) {
     }
 
     if (!parsedEnv.HOT_RELOAD) {
-        cssLoaders = _miniCssExtractPlugin2.default.extract({
-            fallback: 'style-loader',
-            use: cssLoaders
-        });
+        cssLoaders = [
+            {
+                loader: _miniCssExtractPlugin2.default.loader
+            },
+            'css-loader'
+        ]
     } else {
         cssLoaders.unshift('style-loader');
     }
