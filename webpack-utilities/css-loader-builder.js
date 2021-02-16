@@ -1,8 +1,5 @@
 'use strict';
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
 exports.default = cssLoaderBuilder;
 
 var _path = require('path');
