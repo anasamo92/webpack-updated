@@ -1,6 +1,6 @@
 import path from 'path';
 import glob from 'glob';
-import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import ExtractTextPlugin from 'extract-text-webpack-plugin-updated';
 
 export default function cssLoaderBuilder(parsedEnv, cssOptions = {}, handleScss = true, handleCss = true) {
 
@@ -37,12 +37,10 @@ export default function cssLoaderBuilder(parsedEnv, cssOptions = {}, handleScss 
     }
 
     if (!parsedEnv.HOT_RELOAD) {
-        cssLoaders = [
-            {
-                loader: MiniCssExtractPlugin.loader
-            },
-            'css-loader'
-        ];
+        cssLoaders = ExtractTextPlugin.extract({
+            fallback: 'style-loader',
+            use: cssLoaders
+        });
     } else {
         cssLoaders.unshift('style-loader');
     }

@@ -79,4 +79,4 @@ var tsConfig = function tsConfig(environnement, definedVariables) {
 };
 
 exports.default = tsConfig;
-module.exports = exports.default;
+module.exports = exports['default'];

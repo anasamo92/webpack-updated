@@ -67,4 +67,4 @@ var envParser = function envParser(env) {
 };
 
 exports.default = envParser;
-module.exports = exports.default;
+module.exports = exports['default'];

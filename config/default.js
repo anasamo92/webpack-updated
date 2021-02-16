@@ -41,4 +41,4 @@ var defaultConfig = function defaultConfig(environnement, definedVariables) {
 };
 
 exports.default = defaultConfig;
-module.exports = exports.default;
+module.exports = exports['default'];
