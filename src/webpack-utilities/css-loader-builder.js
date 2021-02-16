@@ -1,6 +1,6 @@
 import path from 'path';
 import glob from 'glob';
-import ExtractTextPlugin from 'extract-text-webpack-plugin-updated';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
 export default function cssLoaderBuilder(parsedEnv, cssOptions = {}, handleScss = true, handleCss = true) {
 
@@ -37,7 +37,7 @@ export default function cssLoaderBuilder(parsedEnv, cssOptions = {}, handleScss 
     }
 
     if (!parsedEnv.HOT_RELOAD) {
-        cssLoaders = ExtractTextPlugin.extract({
+        cssLoaders = MiniCssExtractPlugin.extract({
             fallback: 'style-loader',
             use: cssLoaders
         });

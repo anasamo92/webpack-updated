@@ -18,9 +18,9 @@ var _htmlWebpackPlugin = require('html-webpack-plugin');
 
 var _htmlWebpackPlugin2 = _interopRequireDefault(_htmlWebpackPlugin);
 
-var _extractTextWebpackPlugin = require('extract-text-webpack-plugin-updated');
+var _miniCssExtractPlugin = require('mini-css-extract-plugin');
 
-var _extractTextWebpackPlugin2 = _interopRequireDefault(_extractTextWebpackPlugin);
+var _miniCssExtractPlugin2 = _interopRequireDefault(_miniCssExtractPlugin);
 
 var _webpackBundleAnalyzer = require('webpack-bundle-analyzer');
 
@@ -127,7 +127,7 @@ var baseConfig = function baseConfig(environnement, definedVariables) {
     });
     if (!parsedEnv.HOT_RELOAD) {
         config.addPlugin(20, function () {
-            return new _extractTextWebpackPlugin2.default(config.getCssFilename());
+            return new _miniCssExtractPlugin2.default(config.getCssFilename());
         });
     }
     // Gestion du HOT_RELOAD

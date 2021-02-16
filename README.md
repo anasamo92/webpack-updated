@@ -188,7 +188,7 @@ Just use any order you want to add a loader or a plugin between two existing loa
 #### Plugins 
 
 - 10 - DefinePlugin
-- 20 - ExtractTextPlugin
+- 20 - MiniCssExtractPlugin
 - 30 - HotModuleReplacementPlugin
 - 40 - HtmlWebpackPlugin
 - 50 - UglifyJsPlugin
@@ -197,6 +197,6 @@ Just use any order you want to add a loader or a plugin between two existing loa
 
 - 10 - source map loader (using `enforce:pre`, so it is a pre loader)
 - 20 - babel loader
-- 30 - SASS -> ExtractTextPlugin, with css-loader, postcss-loader, sass-loader
-- 40 - CSS -> ExtractTextPlugin, with css-loader, postcss-loader
+- 30 - SASS -> MiniCssExtractPlugin, with css-loader, postcss-loader, sass-loader
+- 40 - CSS -> MiniCssExtractPlugin, with css-loader, postcss-loader
 - 50 - url-loader (for ressources files)

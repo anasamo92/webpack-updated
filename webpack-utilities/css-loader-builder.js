@@ -13,9 +13,9 @@ var _glob = require('glob');
 
 var _glob2 = _interopRequireDefault(_glob);
 
-var _extractTextWebpackPlugin = require('extract-text-webpack-plugin-updated');
+var _miniCssExtractPlugin = require('mini-css-extract-plugin');
 
-var _extractTextWebpackPlugin2 = _interopRequireDefault(_extractTextWebpackPlugin);
+var _miniCssExtractPlugin2 = _interopRequireDefault(_miniCssExtractPlugin);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,7 +55,7 @@ function cssLoaderBuilder(parsedEnv) {
     }
 
     if (!parsedEnv.HOT_RELOAD) {
-        cssLoaders = _extractTextWebpackPlugin2.default.extract({
+        cssLoaders = _miniCssExtractPlugin2.default.extract({
             fallback: 'style-loader',
             use: cssLoaders
         });
