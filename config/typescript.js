@@ -1,5 +1,8 @@
 'use strict';
 
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 
 var _base = require('./base');
 
@@ -76,4 +79,4 @@ var tsConfig = function tsConfig(environnement, definedVariables) {
 };
 
 exports.default = tsConfig;
-module.exports = exports.default;
+module.exports = exports['default'];

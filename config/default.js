@@ -1,5 +1,8 @@
 'use strict';
 
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 
 var _base = require('./base');
 
@@ -38,4 +41,4 @@ var defaultConfig = function defaultConfig(environnement, definedVariables) {
 };
 
 exports.default = defaultConfig;
-module.exports = exports.default;
+module.exports = exports['default'];

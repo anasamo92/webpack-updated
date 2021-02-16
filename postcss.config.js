@@ -1,5 +1,8 @@
 'use strict';
 
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 
 var _path = require('path');
 
@@ -35,4 +38,4 @@ exports.default = function (_ref) {
     };
 };
 
-module.exports = exports.default;
+module.exports = exports['default'];

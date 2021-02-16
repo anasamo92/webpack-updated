@@ -1,5 +1,8 @@
 'use strict';
 
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 var defaultEnv = {
     DEV: 'true', // Toggles the hot reloading
     DEV_SERVER_PROTOCOL: 'http', // Dev server protocol
@@ -64,4 +67,4 @@ var envParser = function envParser(env) {
 };
 
 exports.default = envParser;
-module.exports = exports.default;
+module.exports = exports['default'];

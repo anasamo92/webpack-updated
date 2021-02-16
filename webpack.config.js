@@ -1,6 +1,8 @@
 'use strict';
 
-
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
 var _default = require('./config/default');
 
@@ -14,4 +16,4 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var parsedConf = (0, _envParser2.default)(process.env);
 exports.default = (0, _default2.default)(process.env, {}).toWebpackConfig(parsedConf);
-module.exports = exports.default;
+module.exports = exports['default'];

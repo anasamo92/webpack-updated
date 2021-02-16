@@ -3,7 +3,7 @@ import path from 'path';
 import { cpus } from 'os';
 
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import ExtractTextPlugin from 'extract-text-webpack-plugin-updated';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import WatchMissingNodeModulesPlugin from 'react-dev-utils/WatchMissingNodeModulesPlugin';
 import CaseSensitivePathsPlugin from 'case-sensitive-paths-webpack-plugin';
@@ -87,7 +87,7 @@ const baseConfig = (environnement, definedVariables) => {
     // Les fonctions seront résolues au moment de la création de la config webpack.
     config.addPlugin(10, () => new webpack.DefinePlugin(config.getDefinedVariables()));
     if (!parsedEnv.HOT_RELOAD) {
-        config.addPlugin(20, () => new MiniCssExtractPlugin(config.getCssFilename()));
+        config.addPlugin(20, () => new ExtractTextPlugin(config.getCssFilename()));
     }
     // Gestion du HOT_RELOAD
     if (parsedEnv.HOT_RELOAD) {
