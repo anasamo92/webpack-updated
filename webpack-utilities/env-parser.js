@@ -1,8 +1,5 @@
 'use strict';
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
 var defaultEnv = {
     DEV: 'true', // Toggles the hot reloading
     DEV_SERVER_PROTOCOL: 'http', // Dev server protocol

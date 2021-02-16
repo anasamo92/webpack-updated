@@ -1,8 +1,5 @@
 'use strict';
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
 exports.serverLauncher = undefined;
 
 var _path = require('path');
