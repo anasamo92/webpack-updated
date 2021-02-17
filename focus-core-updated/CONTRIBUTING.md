@@ -39,7 +39,7 @@ Please read this [document](https://github.com/KleeGroup/focus-docs/tree/master/
 - Add focus as a [remote origin](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
 - `git remote add upstream https://github.com/KleeGroup/{sourceProjectToReplace}.git` <br />
   - **Focus**, `git remote add upstream https://github.com/KleeGroup/focus.git`
-  - **FocusComponents** `git remote add upstream https://github.com/KleeGroup/focus-components.git`
+  - **FocusComponents** `git remote add upstream https://github.com/KleeGroup/focus-components-updated.git`
 
 - Stay up to date with focus , read this [article](https://help.github.com/articles/syncing-a-fork/)
 ```

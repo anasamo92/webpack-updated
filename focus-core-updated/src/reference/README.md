@@ -13,7 +13,7 @@ Exemple:
 Focus.referencee.config.set({'scopes': referenceService.getScopes});
 ```
 Ensuite l'utilisation des listes de réference préchargées se fera dans le composant graphique.
-Voir [FormMixin](https://github.com/KleeGroup/focus-components/blob/master/common/form/README.md)
+Voir [FormMixin](https://github.com/KleeGroup/focus-components-updated/blob/master/common/form/README.md)
 
 ## Fonctionnement de focus.reference
 
