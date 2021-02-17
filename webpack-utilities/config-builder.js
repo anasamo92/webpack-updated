@@ -1,5 +1,8 @@
 'use strict';
 
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -153,7 +156,7 @@ var ConfigBuilder = function () {
         /**
          * Indique le nom du fichier d'output, sans l'extension. Peut contenir [name], [id] et [contenthash]
          * Cf https://webpack.js.org/configuration/output/#output-filename
-         * Cf https://github.com/webpack-contrib/extract-text-webpack-plugin-updated
+         * Cf https://github.com/webpack-contrib/mini-css-extract-plugin
          *
          * @param {string} name le nom du fichier JS et CSS sans l'extension (par défault, le nom du package NPM :`${npm_package_name}`)
          *
@@ -422,7 +425,7 @@ var ConfigBuilder = function () {
         }
 
         /**
-         * Retourne le nom du fichier css (pour ExtractTextPlugin).
+         * Retourne le nom du fichier css (pour MiniCssExtractPlugin).
          *
          * @returns {string} le nom du fichier css
          *

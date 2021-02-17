@@ -39,12 +39,10 @@ export default function cssLoaderBuilder(parsedEnv, cssOptions = {}, handleScss 
     if (!parsedEnv.HOT_RELOAD) {
         cssLoaders = [
             {
-                loader: MiniCssExtractPlugin.loader,
-                options: {
-                }
+                loader: MiniCssExtractPlugin.loader
             },
             'css-loader'
-        ]
+        ];
     } else {
         cssLoaders.unshift('style-loader');
     }

@@ -1,5 +1,8 @@
 'use strict';
 
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 
 var _webpack = require('webpack');
 
@@ -124,7 +127,7 @@ var baseConfig = function baseConfig(environnement, definedVariables) {
     });
     if (!parsedEnv.HOT_RELOAD) {
         config.addPlugin(20, function () {
-            return new _miniCssExtractPlugin2.default(config.getCssFilename());
+            return new _miniCssExtractPlugin2.default({ filename: config.getCssFilename() });
         });
     }
     // Gestion du HOT_RELOAD

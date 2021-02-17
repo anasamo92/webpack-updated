@@ -1,5 +1,8 @@
 'use strict';
 
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 exports.default = cssLoaderBuilder;
 
 var _path = require('path');
@@ -53,8 +56,7 @@ function cssLoaderBuilder(parsedEnv) {
 
     if (!parsedEnv.HOT_RELOAD) {
         cssLoaders = [{
-            loader: _miniCssExtractPlugin2.default.loader,
-            options: {}
+            loader: _miniCssExtractPlugin2.default.loader
         }, 'css-loader'];
     } else {
         cssLoaders.unshift('style-loader');
