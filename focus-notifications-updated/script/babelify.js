@@ -4,7 +4,7 @@ var babel = require('babel-core');
 
 var babelOptions = {
     "presets": [
-        "focus"
+        "updated"
     ],
     sourceMaps: 'inline'
 };

@@ -5,7 +5,7 @@ module.exports =  {
     ],
     output: {
         path: path.join(__dirname, 'dist'),
-        filename: 'focus-notifications.js',
+        filename: 'focus-notifications-updated.js',
         publicPath: '/dist/',
         libraryTarget: 'var',
         library: 'FocusNotifications'
