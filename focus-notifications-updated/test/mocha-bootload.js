@@ -13,7 +13,6 @@ global.React = require('react');
 global.ReactDOM = require('react-dom');
 global.expect = chai.expect;
 global.sinon = sinon;
-global.TestUtils = require('react-addons-test-utils');
 global.sandbox = require('./sandbox');
 global.componentHandler = {upgradeElement: function(){}};
 // Js dom
