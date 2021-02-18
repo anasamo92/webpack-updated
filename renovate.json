@@ -6,7 +6,7 @@
     "semanticCommitType": "chore",
     "commitMessageTopic": "{{depName}}",
     "semanticCommitScope": null,
-    "branchPrefix": "deps/webpack-focus-",
+    "branchPrefix": "deps/webpack-updated-",
     "extends": ["config:base"],
     "major": {
         "semanticCommitType": "feat",
