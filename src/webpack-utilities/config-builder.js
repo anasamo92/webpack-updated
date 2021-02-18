@@ -1,5 +1,5 @@
 import path from 'path';
-import defaultsDeep from 'lodash/defaultsDeep';
+import {defaultsDeep} from 'lodash';
 
 const entryError =
     `Le point d'entrée correspond au point d'entrée dans la SPA,

@@ -1,7 +1,7 @@
 import path from 'path';
 import webpack from 'webpack';
 import WebpackDevServer from 'webpack-dev-server';
-import defaultsDeep from 'lodash/defaultsDeep';
+import {defaultsDeep} from 'lodash';
 import errorOverlayMiddleware from 'react-dev-utils/errorOverlayMiddleware';
 import noopServiceWorkerMiddleware from 'react-dev-utils/noopServiceWorkerMiddleware';
 
