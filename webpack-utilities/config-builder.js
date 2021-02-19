@@ -156,7 +156,7 @@ var ConfigBuilder = function () {
         /**
          * Indique le nom du fichier d'output, sans l'extension. Peut contenir [name], [id] et [contenthash]
          * Cf https://webpack.js.org/configuration/output/#output-filename
-         * Cf https://github.com/webpack-contrib/extract-text-webpack-plugin-updated
+         * Cf https://github.com/webpack-contrib/extract-text-webpack-plugin
          *
          * @param {string} name le nom du fichier JS et CSS sans l'extension (par défault, le nom du package NPM :`${npm_package_name}`)
          *
