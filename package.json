@@ -1,10 +1,10 @@
 {
     "name": "webpack-updated",
-    "version": "1.0.17",
+    "version": "1.0.18",
     "description": "Focus webpack config",
     "main": "./index.js",
     "bin": {
-        "focus-dev-server": "./launcher.js"
+        "focus-dev-server": "launcher.js"
     },
     "scripts": {
         "build": "better-npm-run build",
