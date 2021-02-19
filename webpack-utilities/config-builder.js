@@ -4,15 +4,15 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
+var _defaultsDeep2 = require('lodash/defaultsDeep');
+
+var _defaultsDeep3 = _interopRequireDefault(_defaultsDeep2);
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _path = require('path');
 
 var _path2 = _interopRequireDefault(_path);
-
-var _defaultsDeep = require('lodash/defaultsDeep');
-
-var _defaultsDeep2 = _interopRequireDefault(_defaultsDeep);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -515,7 +515,7 @@ var ConfigBuilder = function () {
             var env = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
             var customConf = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
 
-            return (0, _defaultsDeep2.default)(customConf, this._buildConfig(env));
+            return (0, _defaultsDeep3.default)(customConf, this._buildConfig(env));
         }
     }]);
 

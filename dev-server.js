@@ -5,6 +5,10 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.serverLauncher = undefined;
 
+var _defaultsDeep2 = require('lodash/defaultsDeep');
+
+var _defaultsDeep3 = _interopRequireDefault(_defaultsDeep2);
+
 var _path = require('path');
 
 var _path2 = _interopRequireDefault(_path);
@@ -16,10 +20,6 @@ var _webpack2 = _interopRequireDefault(_webpack);
 var _webpackDevServer = require('webpack-dev-server');
 
 var _webpackDevServer2 = _interopRequireDefault(_webpackDevServer);
-
-var _defaultsDeep = require('lodash/defaultsDeep');
-
-var _defaultsDeep2 = _interopRequireDefault(_defaultsDeep);
 
 var _errorOverlayMiddleware = require('react-dev-utils/errorOverlayMiddleware');
 
@@ -107,7 +107,7 @@ var serverLauncher = exports.serverLauncher = function serverLauncher(webpackCon
         // Create a webpack compiler that is configured with custom messages.
         var compiler = (0, _WebpackDevServerUtils.createCompiler)(_webpack2.default, webpackConfig, npm_package_name, urls, false);
 
-        var devServer = new _webpackDevServer2.default(compiler, (0, _defaultsDeep2.default)(serverConfig, defaultServerConfig));
+        var devServer = new _webpackDevServer2.default(compiler, (0, _defaultsDeep3.default)(serverConfig, defaultServerConfig));
         // Launch WebpackDevServer.
         devServer.listen(port, DEV_SERVER_HOST, function (err) {
             if (err) {
