@@ -1,5 +1,5 @@
 {
-    "name": "webpack-focus",
+    "name": "webpack-updated",
     "version": "4.0.1-beta1",
     "description": "Focus webpack config",
     "main": "./index.js",
@@ -28,7 +28,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/KleeGroup/webpack-focus.git"
+        "url": "git+https://github.com/KleeGroup/webpack-updated.git"
     },
     "keywords": [
         "focus",
@@ -36,7 +36,7 @@
     ],
     "author": "focus@kleegroup.com",
     "license": "MIT",
-    "homepage": "https://github.com/KleeGroup/webpack-focus#readme",
+    "homepage": "https://github.com/KleeGroup/webpack-updated#readme",
     "devDependencies": {
         "tslint": "5.11.0",
         "typescript": "3.2.4",
