@@ -1,0 +1,164 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "webpack-focus@1.0.0",
+        "scope": null,
+        "escapedName": "webpack-focus",
+        "name": "webpack-focus",
+        "rawSpec": "1.0.0",
+        "spec": "1.0.0",
+        "type": "version"
+      },
+      "D:\\CNC\\sagessbfo\\Sources\\Sagess.Spa\\Sagess.BackOffice"
+    ]
+  ],
+  "_from": "webpack-focus@1.0.0",
+  "_id": "webpack-focus@1.0.0",
+  "_inCache": true,
+  "_location": "/webpack-focus",
+  "_nodeVersion": "6.10.2",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/webpack-focus-1.0.0.tgz_1510070562629_0.40758942160755396"
+  },
+  "_npmUser": {
+    "name": "hartorn",
+    "email": "hartorn.github@gmail.com"
+  },
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "webpack-focus@1.0.0",
+    "scope": null,
+    "escapedName": "webpack-focus",
+    "name": "webpack-focus",
+    "rawSpec": "1.0.0",
+    "spec": "1.0.0",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/webpack-focus/-/webpack-focus-1.0.0.tgz",
+  "_shasum": "d6fde3f8944cb24a3150249a53b427acd1cf3ba4",
+  "_shrinkwrap": null,
+  "_spec": "webpack-focus@1.0.0",
+  "_where": "D:\\CNC\\sagessbfo\\Sources\\Sagess.Spa\\Sagess.BackOffice",
+  "author": {
+    "name": "focus@kleegroup.com"
+  },
+  "babel": {
+    "presets": [
+      "focus"
+    ]
+  },
+  "betterScripts": {
+    "build": {
+      "command": "babel src/ --out-dir .",
+      "env": {
+        "NODE_ENV": "development",
+        "LEGACY_EXPORTS": "true"
+      }
+    }
+  },
+  "bin": {
+    "focus-dev-server": "./launcher.js"
+  },
+  "bugs": {
+    "url": "https://github.com/KleeGroup/webpack-focus/issues"
+  },
+  "dependencies": {
+    "autoprefixer": "7.1.6",
+    "babel-loader": "7.1.2",
+    "babel-polyfill": "6.26.0",
+    "babel-preset-focus": "1.0.0",
+    "cache-loader": "1.1.0",
+    "case-sensitive-paths-webpack-plugin": "2.1.1",
+    "css-loader": "0.28.7",
+    "cssnano": "4.0.0-rc.2",
+    "eslint-config-focus": "0.6.0",
+    "eslint-loader": "1.9.0",
+    "extract-text-webpack-plugin": "3.0.2",
+    "file-loader": "1.1.5",
+    "fork-ts-checker-webpack-plugin": "0.2.8",
+    "html-webpack-plugin": "2.30.1",
+    "lodash": "4.17.4",
+    "node-sass": "4.5.3",
+    "null-loader": "0.1.1",
+    "postcss-cssnext": "3.0.2",
+    "postcss-flexbugs-fixes": "3.2.0",
+    "postcss-import": "11.0.0",
+    "postcss-loader": "2.0.8",
+    "react-dev-utils": "4.1.0",
+    "react-error-overlay": "2.0.2",
+    "react-hot-loader": "3.1.1",
+    "sass-loader": "6.0.6",
+    "source-map-loader": "0.2.3",
+    "style-loader": "0.19.0",
+    "thread-loader": "1.1.2",
+    "ts-loader": "3.1.1",
+    "uglifyjs-webpack-plugin": "1.0.1",
+    "url-loader": "0.6.2",
+    "webpack": "3.8.1",
+    "webpack-bundle-analyzer": "2.9.0",
+    "webpack-dev-server": "2.9.3",
+    "whatwg-fetch": "2.0.3"
+  },
+  "description": "Focus webpack config",
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "better-npm-run": "0.1.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "d6fde3f8944cb24a3150249a53b427acd1cf3ba4",
+    "tarball": "https://registry.npmjs.org/webpack-focus/-/webpack-focus-1.0.0.tgz"
+  },
+  "gitHead": "bebc87514bc5f1961a217e7b37e7f6255ccf0e0f",
+  "homepage": "https://github.com/KleeGroup/webpack-focus#readme",
+  "keywords": [
+    "focus",
+    "webpack"
+  ],
+  "license": "MIT",
+  "main": "./index.js",
+  "maintainers": [
+    {
+      "name": "c3dr0x",
+      "email": "cedric.bouletkessler@gmail.com"
+    },
+    {
+      "name": "hartorn",
+      "email": "hartorn.github@gmail.com"
+    },
+    {
+      "name": "fconstantin",
+      "email": "francois.constantin@kleegroup.com"
+    },
+    {
+      "name": "tommass",
+      "email": "thomas.gallon@gmail.com"
+    },
+    {
+      "name": "getfocus",
+      "email": "focus.bureau@kleegroup.com"
+    },
+    {
+      "name": "focusjs",
+      "email": "focus@kleegroup.com"
+    }
+  ],
+  "name": "webpack-focus",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KleeGroup/webpack-focus.git"
+  },
+  "scripts": {
+    "build": "better-npm-run build",
+    "prepublishOnly": "npm run build"
+  },
+  "version": "1.0.0"
+}
